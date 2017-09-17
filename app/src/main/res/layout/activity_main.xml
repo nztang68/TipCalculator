@@ -32,7 +32,8 @@
         android:textColor="@color/colorWhite"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColorHint="@color/colorLightGray"
-        android:gravity="center" />
+        android:gravity="center"
+        android:background="@android:color/transparent"/>
     
     <View
         android:id="@+id/vRatingButtons"
@@ -45,7 +46,57 @@
     <LinearLayout
         android:id="@+id/rlRatingButtons"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vRatingButtons"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
 
+        <ImageButton
+            android:id="@+id/ibRegularService"
+            android:contentDescription="@string/main.msg.serviceRating"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_image_buttons"
+            android:layout_weight="1"
+            android:background="@color/colorBlue"
+            android:src="@drawable/emoticon_sad"
+            />
+
+        <ImageButton
+            android:id="@+id/ibGoodService"
+            android:contentDescription="@string/main.msg.serviceRating"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_image_buttons"
+            android:layout_weight="1"
+            android:background="@color/colorBlue"
+            android:src="@drawable/emoticon_happy"
+            />
+
+        <ImageButton
+            android:id="@+id/ibExcellentService"
+            android:contentDescription="@string/main.msg.serviceRating"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_image_buttons"
+            android:layout_weight="1"
+            android:background="@color/colorBlue"
+            android:src="@drawable/emoticon"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vRatingSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rlRatingButtons"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorLightGray"/>
+
+    <TextView
+        android:id="@+id/tvServiceRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vRatingSeparator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/main.msg.serviceRating" />
 
 </RelativeLayout>
