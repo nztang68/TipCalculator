@@ -149,9 +149,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/vBillSeparator"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:text="@string/main.msg.billTotal" />
+        android:layout_marginTop="@dimen/activity_vertical_margin_big"
+        android:text="@string/main.msg.billTotal"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/tvBillTotalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBillTotal"
+        android:layout_marginTop="@dimen/activity_vertical_margin_big"
+        android:text="@string/main.msg.billTotalResult"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorWhite"/>
 
 </RelativeLayout>
